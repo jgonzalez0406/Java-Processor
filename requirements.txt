@@ -1,0 +1,8 @@
+Flask==2.3.2
+javalang==0.13.0
+openai==0.27.8
+Requests==2.31.0
+tiktoken==0.4.0
+torch==2.0.1
+tqdm==4.65.0
+transformers==4.30.2
