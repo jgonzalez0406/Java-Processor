@@ -16,9 +16,12 @@ The processed file with its new comments is then added to the specified director
     * [jam_so](https://huggingface.co/apcl/jam_so)
   
 ## Usage
-* After installing the appropriate dependencies and files, first run `myApp.py` since the code runs locally and will need to be running before `codeProcessor.py`
+* After installing the appropriate dependencies and files, first run `myApp.py` since the code runs locally and will need to be running before anything else
 * To run `codeProcessor.py`, execute
   ```
   python3 codeProcessor.py <filename> <directory>
   ```
-  * **<filename>** : Name for the new file
+  * `<filename>`: Name for the new file
+  * `<directory>`: Name for the specified directory containing Java files to be processed
+* The code will process each Java file in `<directory>`, generate method descriptions in the Flask server, and then update the Java files with the descriptions under `<filename>`
+* Check the console for progress and to view the new file
