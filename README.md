@@ -10,3 +10,15 @@ The processed file with its new comments is then added to the specified director
    pip install -r requirements.txt
   ```
   * This contains Flask, tiktoken, torch, javalang, argparse
+* Use one of the models on [APCL](https://huggingface.co/apcl) for the checkpoint file:
+    * [jam](https://huggingface.co/apcl/jam)
+    * [jam_sojm](https://huggingface.co/apcl/jam_sojm)
+    * [jam_so](https://huggingface.co/apcl/jam_so)
+  
+## Usage
+* After installing the appropriate dependencies and files, first run `myApp.py` since the code runs locally and will need to be running before `codeProcessor.py`
+* To run `codeProcessor.py`, execute
+  ```
+  python3 codeProcessor.py <filename> <directory>
+  ```
+  * **<filename>** : Name for the new file
